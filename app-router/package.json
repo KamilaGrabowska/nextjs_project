@@ -1,0 +1,30 @@
+{
+  "name": "app-router",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint && npx prettier \"src/**/*.{js,ts,tsx,jsx,css}\"",
+    "lint:fix": "next lint --fix && npx prettier --write \"src/**/*.{js,ts,tsx,jsx,css}\""
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "next": "14.0.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.69.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5"
+  }
+}

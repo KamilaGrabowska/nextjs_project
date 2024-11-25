@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  background-color: rgb(38, 38, 38);
+  padding: 15px 5vw;
+
+  .menu-item a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+

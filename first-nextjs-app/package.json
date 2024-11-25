@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint && npx prettier \"src/**/*.{jsx,tsx, js,ts, css}\"",
+    "lint:fix": "next lint --fix && npx prettier \"src/**/*.{jsx,tsx, js,ts, css}\""
   },
   "dependencies": {
     "next": "15.0.3",
@@ -19,7 +20,8 @@
     "@types/react-dom": "^18",
     "eslint": "^8.57.1",
     "eslint-config-next": "15.0.3",
-    "prettier": "^3.3.3",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.3.3",
     "typescript": "^5"
   }
 }

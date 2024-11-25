@@ -1,0 +1,17 @@
+.text{
+  &.revert{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    text-align: justify;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}
