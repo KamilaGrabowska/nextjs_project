@@ -18,7 +18,9 @@ export default async function PostsPage({searchParams}: PostsPageProps) {
     if (searchParams?.page) {
         page = Number(searchParams?.page) || 1;
     }
-    const res = await fetch(`http://localhost:3004/posts?_limit=${POST_PER_PAGE}&_page=${page}`);
+    const res = await fetch(`http://localhost:3004/posts?_limit=${POST_PER_PAGE}&_page=${page}`,
+    {next:{revalidate:5}}
+    );
 
     if (!res.ok) {
         throw new Error("Problem with the posts");
