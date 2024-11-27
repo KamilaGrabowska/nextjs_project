@@ -3,6 +3,7 @@ import style from "@//app/posts/posts.module.scss";
 import {commonMetadata} from '@/common/shared-metadata';
 import {Pagination} from '@/common/components/Pagination';
 import {SearchParams} from '@/types/NextTypes';
+import Link from 'next/link';
 
 export const metadata= {
     title: `Posts ${commonMetadata.title}`,
@@ -31,8 +32,12 @@ export default async function PostsPage({searchParams}: PostsPageProps) {
     return (
         <div>
             <h1>Posts</h1>
-            {posts.map((posts)=> (
-                <div className={style.item} key={posts.id}>{posts.title}</div>
+            {posts.map((post)=> (
+                <div className={style.item} key={post.id}>
+                    {post.title}
+                    <br/>
+                    <Link href={`/posts/${post.id}`}> Read more </Link>
+                </div>
             ))}
 
             <Pagination page={page} total={POSTS_TOTAL} perPage={POST_PER_PAGE} />
