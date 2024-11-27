@@ -1,4 +1,5 @@
 import style from './aboutUS.module.scss';
+import {LastNews} from '@/common/components/LastNews';
 
 export default function AboutUs() {
     return (
@@ -30,6 +31,9 @@ export default function AboutUs() {
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
                 </p>
             </section>
+
+            <LastNews/>
+
             <h2>History</h2>
             <section className={`${style.text} ${style.revert}`}>
                 <p>

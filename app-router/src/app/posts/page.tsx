@@ -5,6 +5,7 @@ import { Pagination } from '@/common/components/Pagination';
 import { SearchParams } from '@/types/NextTypes';
 import Link from 'next/link';
 import { fetchClient } from '@/common/clientAPI/fetchClient';
+import { POSTS_TOTAL } from '@/common/config';
 
 export const metadata = {
     title: `Posts ${commonMetadata.title}`,
@@ -14,7 +15,6 @@ export const metadata = {
 type PostsPageProps = {} & SearchParams;
 
 const POST_PER_PAGE = 10; // we should take this information from API but for test I hardcoded it
-const POSTS_TOTAL = 60; // we should take this information from API but for test I hardcoded it
 
 export default async function PostsPage({ searchParams }: PostsPageProps) {
     let page = 1;
