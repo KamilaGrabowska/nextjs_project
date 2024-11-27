@@ -10,7 +10,7 @@ type InfoPageProps = {
 
 const InfoPage: NextPage<InfoPageProps> = async ({params}) => {
  const content = await  fetchClient<InfoContent>(
-     `http://localhost:3004/contents/${encodeURIComponent(params.path.join(" / "))}`)
+     `http://localhost:3004/contents/${encodeURIComponent(params.path.join("/"))}`)
     return (
         <div>
            <h1>Info Page: {content.title}</h1>
