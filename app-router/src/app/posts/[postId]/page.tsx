@@ -1,7 +1,7 @@
 import {NextPage} from 'next';
 import {Post} from '../../types/Posts';
 import style from './post.module.scss';
-import {notFound} from 'next/navigation';
+import {fetchClient} from '@/common/clientAPI/fetchClient';
 
 type PostPageProps = {
     params: {
@@ -9,17 +9,7 @@ type PostPageProps = {
     };
 };
 const fetchPost = async (postId: number) => {
-    const resp = await fetch(`http://localhost:3004/posts/${postId}`);
-
-    if(!resp.ok && resp.status ===404) {
-        throw notFound();
-    }
-
-    if(!resp.ok) {
-        throw new Error ("problem with getting post");
-    }
-    const post: Post = await resp.json();
-    return post;
+    return await fetchClient<Post>(`http://localhost:3004/posts/${postId}`)
 };
 
 export const generateMetadata = async ({params}: PostPageProps) => {
@@ -39,7 +29,7 @@ const post = await fetchPost(+params.postId);
          <p> {post.body}</p>
          <p> {post.tags && post.tags.length > 0 && (
              <div className={style.tags}>
-                 {post.tags.map(tag => <em key={tag}>{tag}</em>)}
+                 {post.tags.map((tag:string) => (<em key={tag}>{tag}</em>))}
              </div>
          )}</p>
       </div>

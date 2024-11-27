@@ -483,17 +483,17 @@
   ],
   "contents": [
     {
-      "id": "prices",
+      "id": "info-page/prices",
       "title": "Info page Prices",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus tincidunt scelerisque. Phasellus sit amet nisi ut neque suscipit hendrerit. Aenean gravida varius ligula, in convallis leo vestibulum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam aliquam justo eget velit gravida, in scelerisque sapien condimentum. Nulla volutpat magna non lacus pulvinar dictum. Curabitur sit amet turpis a massa luctus venenatis. Pellentesque tristique hendrerit sem eget ullamcorper. Curabitur at consequat sapien, a cursus lacus. Maecenas viverra eros sagittis nulla rhoncus, in euismod enim suscipit."
     },
     {
-      "id": "services",
+      "id": "info-page/services",
       "title": "Info page services",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus tincidunt scelerisque. Phasellus sit amet nisi ut neque suscipit hendrerit. Aenean gravida varius ligula, in convallis leo vestibulum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam aliquam justo eget velit gravida, in scelerisque sapien condimentum. Nulla volutpat magna non lacus pulvinar dictum. Curabitur sit amet turpis a massa luctus venenatis. Pellentesque tristique hendrerit sem eget ullamcorper. Curabitur at consequat sapien, a cursus lacus. Maecenas viverra eros sagittis nulla rhoncus, in euismod enim suscipit."
     },
     {
-      "id": "departments",
+      "id": "info-page/departments",
       "title": "Info page departments",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus tincidunt scelerisque. Phasellus sit amet nisi ut neque suscipit hendrerit. Aenean gravida varius ligula, in convallis leo vestibulum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam aliquam justo eget velit gravida, in scelerisque sapien condimentum. Nulla volutpat magna non lacus pulvinar dictum. Curabitur sit amet turpis a massa luctus venenatis. Pellentesque tristique hendrerit sem eget ullamcorper. Curabitur at consequat sapien, a cursus lacus. Maecenas viverra eros sagittis nulla rhoncus, in euismod enim suscipit."
     }
